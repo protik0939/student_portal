@@ -20,6 +20,7 @@ export default function ResultBarGraph() {
   useEffect(() => {
     const ctx = canvasRef.current;
     if (!ctx) return;
+    
 
     const chartInstance = new Chart(ctx, {
       type: 'bar',
