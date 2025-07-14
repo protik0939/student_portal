@@ -93,8 +93,10 @@ export default function Home() {
       <div className="text-white">
         {data.map((item, index) => (
           <div key={index} className="border-2 rounded-xl m-2 p-4">
-            <h1 className="font-semibold text-blue-400">{item.title}</h1>
-            <p>{item.body}</p>
+            <div>
+              <h1 className="font-semibold text-blue-400">{item.title}</h1>
+              <p>{item.body}</p>
+            </div>
           </div>
         ))}
       </div>
